@@ -17,4 +17,4 @@ wget https://raw.githubusercontent.com/amirhosseinchoghaei/Increase-openwrt-disk
 
 - Done ! After Reboot Login to openwrt And Check Status Page Storage | Disk Space
 
-- IF You have problem please Try another USB Drive
+- IF You have problem please Try another USB Drive And Run Command again .
