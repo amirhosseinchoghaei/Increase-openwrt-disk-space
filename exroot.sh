@@ -19,7 +19,6 @@ clear
 
 opkg update
 
-
 ## Install Some Package for USB Driver ###
 
 opkg install kmod-usb-storage
@@ -64,11 +63,11 @@ mount ${DEVICE} /mnt
 
 tar -C /overlay -cvf - . | tar -C /mnt -xf -
 
-echo "Done Your Router Will be Reboot after 5 Second ...."
+echo -e "${GREEN}Done ! Your Router Will Be reboot After 5 Seconds ... ${NC}"
+
+echo "Powered By AmirHossein Choghaei"
 
 sleep 5
 
 reboot
-
-
 
