@@ -18,18 +18,23 @@ clear
 ### Update Packages ###
 
 opkg update
-
+sleep 2
 ## Install Some Package for USB Driver ###
 
 opkg install kmod-usb-storage
+sleep 2
 
 opkg install kmod-usb-storage-uas
+sleep 2
 
 opkg install usbutils
+sleep 2
 
 opkg install block-mount kmod-fs-ext4 e2fsprogs parted
+sleep 2
 
 parted -s /dev/sda -- mklabel gpt mkpart extroot 2048s -2048s
+sleep 2
 
 ### Configuring rootfs_data ###
 
@@ -41,12 +46,16 @@ uci set fstab.rwm.device="${DEVICE}"
 uci set fstab.rwm.target="/rwm"
 uci commit fstab
 
+sleep 2
+
 ### Configuring extroot ###
 
 DEVICE="/dev/sda1"
 
 mkfs.ext4 -L extroot ${DEVICE}
 y
+
+sleep 5
 
 eval $(block info ${DEVICE} | grep -o -e "UUID=\S*")
 
@@ -56,10 +65,12 @@ uci set fstab.overlay.uuid="${UUID}"
 uci set fstab.overlay.target="/overlay"
 uci commit fstab
 
+sleep 2
 
 ### Transferring data ###
 
 mount ${DEVICE} /mnt
+sleep 2
 
 tar -C /overlay -cvf - . | tar -C /mnt -xf -
 
