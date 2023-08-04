@@ -1,4 +1,6 @@
+
 # Increase-openwrt-disk-space
+[![visitor badge](https://img.shields.io/badge/Chat%20on-Telegram-blue.svg)](https://t.me/AmirHosseinTSL)
 
 # Increase openwrt Disk Space With USB Drive
 
