@@ -53,7 +53,7 @@ sleep 2
 DEVICE="/dev/sda1"
 
 mkfs.ext4 -L extroot ${DEVICE}
-y
+
 
 sleep 5
 
@@ -82,3 +82,4 @@ sleep 5
 
 reboot
 
+rm exroot.sh
