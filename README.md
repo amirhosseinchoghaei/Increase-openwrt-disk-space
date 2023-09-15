@@ -4,7 +4,7 @@
 
 # Increase openwrt Disk Space With USB Drive
 
-Hi Again , I made a script to Increase Your Openwrt Router Disk Space With USB Drive
+Hi Again 👋, I made a script to Increase Your Openwrt Router Disk Space With USB Drive
 
 📍Step 1 : Plug in USB Drive to the router
 
