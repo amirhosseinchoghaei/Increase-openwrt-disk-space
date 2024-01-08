@@ -82,4 +82,4 @@ sleep 5
 
 reboot
 
-rm exroot.sh
+rm exroot.sh 2> /dev/null
